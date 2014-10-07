@@ -22,3 +22,51 @@ section {
  background: transparent url("../img/mars-pano.jpg")no-repeat center;
  backface-size: cover;    
 }
+
+.dipper {
+  width:  200px; 
+  opacity: 0;      
+}
+/*js to know js will be applied*/
+.js-dipper-fade{
+    -webkit-animation: dipper-fade 1s linear forwards;
+}
+/*
+animation-fill mode: forwards:
+will tell the animation t stay at it's end state after complete
+*/
+/* 
+remember need to use all
+*/
+@-webkit-keyframes dipper-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.shuttle-section{
+ background-color: #efb64e; 
+    
+}
+
+.shuttle{
+    width: 200px;
+}
+
+.js-shuttle-fade{
+    -webkit-animation: shuttle-fade 1s linear forwards;
+}
+
+@-webkit-keyframes shuttle-fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
