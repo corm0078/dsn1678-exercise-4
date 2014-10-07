@@ -62,6 +62,19 @@ remember need to use all
     -webkit-animation: shuttle-fade 1s linear forwards;
 }
 
+.ship{
+ display:  inline-block; 
+ position: relative;
+ width:  200px;    
+}
+
+.ship-section{
+ background: transparent url("../img/kasei-valles-canyons.jpg")no-repeat center;
+ background-size: cover;    
+   
+    
+}
+
 @-webkit-keyframes shuttle-fade {
     0% {
         opacity: 0;
