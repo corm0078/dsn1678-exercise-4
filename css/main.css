@@ -62,19 +62,6 @@ remember need to use all
     -webkit-animation: shuttle-fade 1s linear forwards;
 }
 
-.ship{
- display:  inline-block; 
- position: relative;
- width:  200px;    
-}
-
-.ship-section{
- background: transparent url("../img/kasei-valles-canyons.jpg")no-repeat center;
- background-size: cover;    
-   
-    
-}
-
 @-webkit-keyframes shuttle-fade {
     0% {
         opacity: 0;
@@ -86,5 +73,40 @@ remember need to use all
     }
 }
 
+.ship-section {
+ background: transparent url("../img/kasei-valles-canyons.jpg") no-repeat center;
+ background-size: cover; 
+ text-align: center;    
+}
+
+.ship{
+ display: inline-block; 
+ position: relative;
+ width:  200px;     
+}
+
+
+.js-ship-fade{
+    -webkit-animation: ship-fade 1s linear forwards;
+}
+
+.ship:nth-child(3){
+    -webkit-animation-delay: 250ms;   
+}
+
+.ship:nth-child(1){
+    -webkit-animation-delay: 350ms;   
+}
+
+@-webkit-keyframes ship-fade {
+    0% {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
