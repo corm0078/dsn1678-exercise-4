@@ -10,8 +10,9 @@ var $shuttle = $(".shuttle");
 $win.on("scroll", function () {
     var scrollPos= $win.scrollTop();
     
-$sun.css("transform", "rotate(" + scrollPos/5 + "deg)"); 
+$sun.css("transform", "rotate(" +scrollPos/5+ "deg)"); 
 $sunSection.css("background-position", "center " + scrollPos/2 + "px")    
+
 });
 
 $dipperSection.waypoint(function () {
@@ -20,9 +21,5 @@ $dipperSection.waypoint(function () {
 
 $shuttleSection.waypoint(function () {
   $shuttle.addClass("js-shuttle-fade");
-}, { offset: "75%" });
+}, { offset: "50%" });
 
-    
-$shuttle.css("transform", "margin-top(" + scrollPos/5 + "-4)"); 
-$shuttleSection.css("background-position", "center " + scrollPos/2 + "px")    
-});
